@@ -8,28 +8,14 @@ angular
                 imagem: 'Crescimentum.jpg',
                 descricao: 'Painel e sistema de inscrição de cursos e controle de material.',
                 link: 'http://crescimentum.com.br',
-                galeria: 'https://www.flickr.com/photos/149118044@N04/'
+                galeria: 'https://flic.kr/s/aHskLcJ42f'
             },
             {
                 nome: 'WeApp',
                 imagem: 'weapp.jpg',
                 descricao: 'WebSite, dashboard e aplicativo IOS e Android.',
                 link: 'http://weappm.com.br',
-                galeria: 'https://www.flickr.com/photos/149118044@N04/'
-            },
-            {
-                nome: 'Crescimentum',
-                imagem: 'Crescimentum.jpg',
-                descricao: 'Painel e sistema de inscrição de cursos e controle de material.',
-                link: 'http://crescimentum.com.br',
-                galeria: 'https://www.flickr.com/photos/149118044@N04/'
-            },
-            {
-                nome: 'WeApp',
-                imagem: 'weapp.jpg',
-                descricao: 'WebSite, dashboard e aplicativo IOS e Android.',
-                link: 'http://weappm.com.br',
-                galeria: 'https://www.flickr.com/photos/149118044@N04/'
+                galeria: 'https://flic.kr/s/aHskLcJ42L'
             }
         ];
 
