@@ -20,6 +20,13 @@ angular.module('skynar', []);angular
                 descricao: 'WebSite, dashboard e aplicativo IOS e Android.',
                 link: 'http://weappm.com.br',
                 galeria: 'https://flic.kr/s/aHskLcJ42L'
+            },
+            {
+                nome: 'Andrea Rosany',
+                imagem: 'ar.png',
+                descricao: 'Portfolio de Arquitetura.',
+                link: '#port',
+                galeria: 'https://flic.kr/s/aHskNnjsQ3'
             }
         ];
 
