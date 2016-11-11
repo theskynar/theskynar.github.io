@@ -37,7 +37,7 @@ $(function() {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        $("#bs-example-navbar-collapse-1").collapse('toggle');
+        $("#bs-example-navbar-collapse-1").collapse('toggle');git 
         return false;
       }
     }
