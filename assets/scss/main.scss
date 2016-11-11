@@ -8,6 +8,10 @@ html, body {
 
 $skynar: #009BFE;
 
+@mixin skynar-bg($opacity){
+    background: rgba(0, 155, 254, $opacity);
+}
+
 @mixin valign(){
     display: flex;
     display: -webkit-flex;
@@ -50,6 +54,25 @@ $skynar: #009BFE;
 
 .halign {
     @include halign();
+}
+
+.btn-skynar {
+    background: $skynar;
+    border: 0;
+    border-radius: 2px;
+    transition: all 0.5s;
+    color: #fff;
+
+    &:hover {
+        background: $skynar;
+        box-shadow: 0 5px 5px -2px rgba(0,0,0,0.3);
+        color: #fff;
+    }
+
+    &[disabled] {
+        @include skynar-bg(0.7);
+        cursor: not-allowed;
+    }
 }
 
 .btn-top {
