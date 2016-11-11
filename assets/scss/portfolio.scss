@@ -1,0 +1,68 @@
+section.portfolio {
+    @include section();
+    @include valign();
+
+    & h3 {
+        font-size: 32px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+
+}
+
+
+.card {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px auto;
+
+    & .heading {
+        height: 150px;
+        width: 100%;
+
+        background-size: cover;
+        background-position: center;
+
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    & .body {
+        padding: 15px;
+
+        & .title {
+            font-size: 18px;
+            padding: 10px 0;
+            border-bottom: 1px solid #CCC;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.btn-float {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    background: #FFF;
+    outline-color: transparent;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+    transition: all 0.6s ease-out;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+
+    &:hover {
+        background: #f4f4f4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+}

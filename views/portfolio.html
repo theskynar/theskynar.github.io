@@ -1,0 +1,19 @@
+<div class="container">
+    <h3 class="text-center">PORTFOLIO</h3>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-3" ng-repeat="item in works">
+            <div class="card">
+                <div class="heading" style="background-image: url('../assets/images/portfolio/{{ item.imagem }}')"></div>
+                <div class="body">
+                    <div class="title">{{ item.nome }}</div>
+                    <p>{{ item.descricao }}</p>
+                    <div class="footer">
+                        <a target="blank" href="{{item.link}}" class="btn-float"><i class="fa fa-link"></i></a>
+                        <a target="blank" href="{{item.galeria}}" class="btn-float pull-right"><i class="fa fa-image"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

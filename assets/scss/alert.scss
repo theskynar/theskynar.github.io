@@ -1,0 +1,46 @@
+.ng-alert {
+
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 0 30%;
+    z-index: 1001;
+
+    &.bottom {
+        bottom: 15px;
+    }
+
+    &.top {
+        top: 15px;
+    }
+
+    .alert {
+        width: 100%;
+        position: relative;
+
+        margin-bottom: 5px;
+
+        &.anim {
+            animation-name: fadeAlert;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+    }
+
+
+
+    @include halign();
+    flex-wrap: wrap;
+}
+
+@keyframes fadeAlert {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

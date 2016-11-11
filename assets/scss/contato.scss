@@ -1,0 +1,22 @@
+section.contato {
+    @include section();
+    @include valign();
+
+    & h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        
+        text-transform: uppercase;
+        text-align: center;
+    }
+    hgroup {
+        margin-bottom: 15px;
+    }
+}
+
+.contact-card {
+    padding: 20px;
+
+    border-radius: 4px;
+    box-shadow: 0 5px 8px  rgba(0,0,0,0.4);
+}

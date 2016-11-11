@@ -1,0 +1,27 @@
+footer.footer {
+
+    background: $skynar;
+    height: 80px;
+    padding: 20px;
+    color: #FFF;
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo #logo {
+        height: 40px;
+        width: 40px;
+
+        & > .cls-1 {
+            fill: $skynar;
+        }
+        & > .cls-2 {
+            fill: #FFF;
+        }
+    }
+
+    @include valign();
+
+}

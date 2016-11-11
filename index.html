@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Skynar - Smart and Fast solution!</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/skynar.svg">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/ui-router/ui-router.min.js"></script>
+</head>
+<body ng-app="skynar">
+    
+    <header id="header" ng-include="'views/header.html'"></header>
+    <section ng-controller="portController" id="port" class="portfolio" ng-include="'views/portfolio.html'"></section>
+    <section ng-controller="teamController" id="team" class="team" ng-include="'views/team.html'"></section>
+    <section ng-controller="contactController" id="contact" class="contato" ng-include="'views/contato.html'"></section>
+    <footer id="footer" class="footer valign" ng-include="'views/footer.html'"></footer>
+
+    <a href="#header" class="btn-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app/app.concat.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/alert.js"></script>
+</body>
+</html>
