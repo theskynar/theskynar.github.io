@@ -37,11 +37,31 @@ $(function() {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        $("#bs-example-navbar-collapse-1").collapse('toggle');
         return false;
       }
     }
   });
 });
+
+if(helper.getDevice == 'sm'){
+
+
+  $('#myLinks li a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        $("#bs-example-navbar-collapse-1").collapse('toggle');
+        return false;
+      }
+    }
+  });
+
+}
 
 function buttonsCtrl(){
   var btn = document.querySelector('.btn-top');
