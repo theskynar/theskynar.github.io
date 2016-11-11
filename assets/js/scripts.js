@@ -37,7 +37,7 @@ $(function() {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        $("#bs-example-navbar-collapse-1").collapse('toggle');git 
+        $("#bs-example-navbar-collapse-1").collapse('close');
         return false;
       }
     }
@@ -55,7 +55,7 @@ if(helper.getDevice == 'sm'){
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        $("#bs-example-navbar-collapse-1").collapse('toggle');
+        $("#bs-example-navbar-collapse-1").collapse('close');
         return false;
       }
     }
