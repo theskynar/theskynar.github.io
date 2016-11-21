@@ -8,7 +8,7 @@ angular.module('skynar', []);angular
         event.preventDefault();
         $('.spinner').show();
 
-        $http.post('http://skynar.herokuapp.com/email', mail)
+        $http.post('https://skynar.herokuapp.com/email', mail)
           .success(function(){
             $scope.message = 1;
           })
