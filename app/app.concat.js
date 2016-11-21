@@ -16,11 +16,9 @@ angular.module('skynar', []);angular
             $scope.message = 2;
           })
           .finally(function(){
+            delete $scope.msg;
             $('.spinner').hide();
-            setTimeout(function(){
-              $scope.message = 0;
-            }, 2000);
-          })
+          });
 
       }
 
