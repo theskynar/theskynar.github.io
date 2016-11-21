@@ -6,7 +6,7 @@
                 <h3>fale conosco</h3>
                 <h4 class="text-center">Quer bater um papo conosco? Ficamos honrados! Entre em contato conosco pelo formulário abaixo, ou pelas redes sociais!!</h4>
             </hgroup>
-            <form name="contato">
+            <form name="contato" ng-submit="sendMail($event, msg)">
                 <div class="form-group">
                     <label>Seu nome</label>
                     <input type="text" name="nome" ng-model="msg.nome" class="form-control" required>
@@ -23,9 +23,16 @@
                     <label>Mensagem</label>
                     <textarea rows="3" name="mensagem" ng-model="msg.mensagem" class="form-control" required></textarea>
                 </div>
-                <button ng-disabled="contato.$invalid" class="btn btn-block btn-skynar">Enviar</button>
+                <button type="submit" ng-disabled="contato.$invalid" class="btn btn-block btn-skynar">Enviar</button>
                 <div class="spinner halign" ng-include="'assets/images/skynar.svg'"></div>
             </form>
+            <br />
+            <p ng-if="message == 1" class="alert alert-info">
+              Email enviado com sucesso! Agradecemos seu contato
+            </p>
+            <p ng-if="message == 2" class="alert alert-danger">
+              Ops! Tivemos um problema ao enviar o email, tente novamente mais tarde
+            </p>
         </div>
     </div>
 

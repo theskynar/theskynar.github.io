@@ -54,6 +54,7 @@ $skynar: #009BFE;
 
 .halign {
     @include halign();
+    flex-wrap: wrap;
 }
 
 .btn-skynar {

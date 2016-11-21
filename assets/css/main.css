@@ -10,7 +10,8 @@ html, body {
   display: -webkit-flex;
   display: -ms-flex;
   display: -moz-flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .btn-skynar {
   background: #009BFE;
@@ -52,7 +53,8 @@ html, body {
 div.spinner {
   margin: 15px auto;
   display: block;
-  width: 40px; }
+  width: 40px;
+  display: none; }
   div.spinner #logo {
     height: 40px;
     width: 40px;
