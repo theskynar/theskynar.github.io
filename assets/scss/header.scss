@@ -1,6 +1,10 @@
 #saf {
   animation-delay: 0.5s;
   animation-duration: 1s;
+
+  &.pulse {
+    animation-iteration-count: infinite;
+  }
 }
 
 header {
@@ -42,6 +46,10 @@ nav.navbar.navbar-default {
 
     width: 100%;
     z-index: 1000;
+
+    .navbar-collapse .nav.navbar-nav {
+      margin-top: 0;
+    }
 
     ul li, & ul li a {
         height: 70px;

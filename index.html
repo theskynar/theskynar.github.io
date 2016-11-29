@@ -14,7 +14,7 @@
 </head>
 <body ng-app="skynar">
 
-    <header id="header" ng-include="'views/header.html'"></header>
+    <header ng-controller="headerController" id="header" ng-include="'views/header.html'"></header>
     <section ng-controller="portController" id="port" class="portfolio" ng-include="'views/portfolio.html'"></section>
     <section ng-controller="commentsController" id="comments" class="comentarios" ng-include="'views/comments.html'"></section>
     <section ng-controller="teamController" id="team" class="team" ng-include="'views/team.html'"></section>

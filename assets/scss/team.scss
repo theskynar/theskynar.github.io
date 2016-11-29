@@ -2,9 +2,10 @@ section.team {
 
     padding-top: 75px;
 
-    background: url("../images/team-wp.jpg");
+    /*background: url("../images/team-wp.jpg");
     background-size: cover;
-    background-position: bottom center;
+    background-position: bottom center;*/
+    background: $skynar;
 
     @include section();
     @include valign();
@@ -116,6 +117,9 @@ section.team {
 @media only screen and (max-device-width: 768px){
     .row.content {
         padding: 0;
+    }
+    section.team .enrico, section.team .bordin {
+      opacity: 1;
     }
 }
 

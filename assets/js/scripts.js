@@ -68,8 +68,8 @@ function effectCtrl(){
   var win = $(window);
   var portfolio = $('.portfolio');
   var team = $('#team');
-  if(win.scrollTop() >= portfolio.offset().top - 200) $('.itens-effect').addClass('fadeInUp');
-  if(win.scrollTop() >= team.offset().top - 200) {
+  if(win.scrollTop() >= portfolio.offset().top - 200 && helper.getDevice() != "sm") $('.itens-effect').addClass('fadeInUp');
+  if(win.scrollTop() >= team.offset().top - 200 && helper.getDevice() != "sm") {
     $('.enrico').addClass('animated fadeInLeft');
     $('.bordin').addClass('animated fadeInRight');
   }

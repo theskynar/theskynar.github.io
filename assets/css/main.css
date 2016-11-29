@@ -256,6 +256,8 @@ div.spinner2 {
 #saf {
   animation-delay: 0.5s;
   animation-duration: 1s; }
+  #saf.pulse {
+    animation-iteration-count: infinite; }
 
 header {
   height: 100%;
@@ -291,6 +293,8 @@ nav.navbar.navbar-default {
   left: 0;
   width: 100%;
   z-index: 1000; }
+  nav.navbar.navbar-default .navbar-collapse .nav.navbar-nav {
+    margin-top: 0; }
   nav.navbar.navbar-default ul li, nav.navbar.navbar-default ul li a {
     height: 70px;
     line-height: 40px;
@@ -421,6 +425,10 @@ section.portfolio {
     background: #f4f4f4;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
 
+@media only screen and (max-device-width: 768px) {
+  section.portfolio .itens-effect {
+    opacity: 1; } }
+
 section.comentarios {
   background: #FFF;
   padding: 40px 0;
@@ -488,9 +496,10 @@ section.comentarios {
 
 section.team {
   padding-top: 75px;
-  background: url("../images/team-wp.jpg");
-  background-size: cover;
-  background-position: bottom center;
+  /*background: url("../images/team-wp.jpg");
+    background-size: cover;
+    background-position: bottom center;*/
+  background: #009BFE;
   padding: 110px 0 40px 0;
   min-height: 100%;
   display: flex;
@@ -572,7 +581,9 @@ section.team {
 
 @media only screen and (max-device-width: 768px) {
   .row.content {
-    padding: 0; } }
+    padding: 0; }
+  section.team .enrico, section.team .bordin {
+    opacity: 1; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
   .row.content {
