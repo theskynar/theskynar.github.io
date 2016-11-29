@@ -104,25 +104,25 @@ function navCtrl(){
 
 function linksUp(){
 
-  var height = helper.getHeights();
+  var elements = [$('.portfolio'),$('.team'),$('.contato')]
   var win = $(window).scrollTop();
   var links = $('#myLinks');
 
-  if(win < height.header){
+  if(win < elements[0].offset().top){
     links.children().removeClass('active');
-    return links.children()[0].classList.add('active');
+    links.children()[0].classList.add('active');
   }
-  else if(win > height.header && win < height.header + height.portfolio){
+  if(win >= elements[0].offset().top){
     links.children().removeClass('active');
-    return links.children()[1].classList.add('active');
+    links.children()[1].classList.add('active');
   }
-  else if(win > height.header && win < height.header + height.portfolio + height.team){
+  if(win >= elements[1].offset().top){
     links.children().removeClass('active');
-    return links.children()[2].classList.add('active');
+    links.children()[2].classList.add('active');
   }
-  else {
+  if(win >= elements[2].offset().top) {
     links.children().removeClass('active');
-    return links.children()[3].classList.add('active');
+    links.children()[3].classList.add('active');
   }
 
 
