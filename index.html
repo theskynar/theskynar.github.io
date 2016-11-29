@@ -13,9 +13,10 @@
     <script src="libs/ui-router/ui-router.min.js"></script>
 </head>
 <body ng-app="skynar">
-    
+
     <header id="header" ng-include="'views/header.html'"></header>
     <section ng-controller="portController" id="port" class="portfolio" ng-include="'views/portfolio.html'"></section>
+    <section ng-controller="commentsController" id="comments" class="comentarios" ng-include="'views/comments.html'"></section>
     <section ng-controller="teamController" id="team" class="team" ng-include="'views/team.html'"></section>
     <section ng-controller="contactController" id="contact" class="contato" ng-include="'views/contato.html'"></section>
     <footer id="footer" class="footer valign" ng-include="'views/footer.html'"></footer>
@@ -29,5 +30,6 @@
     <script src="app/app.concat.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/alert.js"></script>
+    <script src="assets/js/slide.js"></script>
 </body>
 </html>

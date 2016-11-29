@@ -5,12 +5,16 @@ section.contato {
     & h3 {
         font-size: 32px;
         margin-bottom: 20px;
-        
+
         text-transform: uppercase;
         text-align: center;
     }
     hgroup {
         margin-bottom: 15px;
+    }
+    .contato-effect {
+      opacity: 0;
+      animation-fill-mode: forwards;
     }
 }
 

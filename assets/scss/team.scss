@@ -5,9 +5,14 @@ section.team {
     background: url("../images/team-wp.jpg");
     background-size: cover;
     background-position: bottom center;
-    
+
     @include section();
     @include valign();
+
+    .enrico, .bordin {
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
 }
 
 .user-card {
@@ -54,7 +59,7 @@ section.team {
         }
 
         ul li {
-            padding: 15px 20px; 
+            padding: 15px 20px;
             border-bottom: 1px solid #f4f4f4;
 
             font-size: 16px;

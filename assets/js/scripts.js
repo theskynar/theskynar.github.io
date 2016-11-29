@@ -26,6 +26,7 @@ $(window).scroll(function(){
   buttonsCtrl();
   navCtrl();
   linksUp();
+  effectCtrl();
 });
 
 $(function() {
@@ -63,6 +64,19 @@ if(helper.getDevice == 'sm'){
 
 }
 
+function effectCtrl(){
+  var win = $(window);
+  var portfolio = $('.portfolio');
+  var team = $('#team');
+  if(win.scrollTop() >= portfolio.offset().top - 200) $('.itens-effect').addClass('fadeInUp');
+  if(win.scrollTop() >= team.offset().top - 200) {
+    $('.enrico').addClass('animated fadeInLeft');
+    $('.bordin').addClass('animated fadeInRight');
+  }
+  if(win.scrollTop() >= $('.contato').offset().top - 200)
+    $('.contato-effect').addClass('fadeIn');
+}
+
 function buttonsCtrl(){
   var btn = document.querySelector('.btn-top');
   if($(window).scrollTop() >= $(window).height()){
@@ -77,11 +91,13 @@ function buttonsCtrl(){
 
 function navCtrl(){
   var nav = $('#mynav');
-  if($(window).scrollTop() >= $(window).height()){
-    nav.addClass('fix');
-  }
-  else {
-    nav.removeClass('fix');
+  if($(window).scrollTop() >= $(window).height())
+    nav.removeClass('fadeInDown').addClass('fix slideInDown');
+  else if(nav.hasClass('slideInDown')){
+    nav.removeClass('slideInDown').addClass('slideOutUp');
+    setTimeout(function(){
+      nav.removeClass('slideOutUp fix').addClass('fadeInDown');
+    },500);
   }
 
 }

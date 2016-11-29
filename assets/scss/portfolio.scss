@@ -9,6 +9,11 @@ section.portfolio {
         text-align: center;
     }
 
+    .itens-effect {
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
 
 }
 

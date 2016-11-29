@@ -1,0 +1,70 @@
+section.comentarios {
+    background: #FFF;
+    padding: 40px 0;
+    color: $skynar;
+
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+#slider {
+  width: 100%;
+
+  position: relative;
+  transition: all 1.2s ease-in-out;
+
+  button {
+    border: 0;
+    background: transparent;
+    outline: none;
+    border-radius: 0;
+    color: $skynar;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 500;
+
+    height: 100%;
+    @include valign();
+  }
+  button.control-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  button.control-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .item {
+    @include valign();
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100px;
+    padding: 0 100px;
+    text-align: center;
+    color: #454545;
+    z-index: 100;
+    display: none;
+
+    &[toggle]{
+      display: block;
+    }
+
+    .comentario {
+      font-size: 22px;
+
+      small {
+        font-size: 16px;
+        color: $skynar;
+      }
+    }
+
+    span.simble {
+      font-family: serif;
+      font-size: 30px;
+      color: $skynar;
+    }
+  }
+}

@@ -1,8 +1,23 @@
 angular.module('skynar', []);angular
     .module('skynar')
-    .controller('contactController', function($scope, $http){
+    .controller('commentsController', function($scope){
 
-      $scope.message = 0;
+      $scope.init = slider;
+      $scope.callNext = function(){
+        thisInterval();
+        clearInterval(interval);
+        interval = setInterval(thisInterval,delay);
+      }
+      $scope.callAnt = function(){
+        reverseInterval();
+        clearInterval(interval);
+        interval = setInterval(thisInterval,delay);
+      }
+
+    });
+angular
+    .module('skynar')
+    .controller('contactController', function($scope, $http){
 
       $scope.sendMail = function(event, mail){
         event.preventDefault();
@@ -10,10 +25,10 @@ angular.module('skynar', []);angular
 
         $http.post('https://skynar.herokuapp.com/email', mail)
           .success(function(){
-            $scope.message = 1;
+            sendAlert('Email enviado com sucesso, agradecemos seu contato!','info','bottom');
           })
           .error(function(err){
-            $scope.message = 2;
+            sendAlert('<strong>Ops</strong>, erro ao enviar...','danger','bottom');
           })
           .finally(function(){
             delete $scope.msg;
