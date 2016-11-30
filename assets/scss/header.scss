@@ -103,25 +103,46 @@ div.header-footer {
     margin: 0;
 }
 
-#mynav.bounceInDown {
-    animation-delay: 0.2s;
-    animation-duration: 1s;
+#mynav {
+    transition: all 0.3s ease-out;
+    height: 50px;
+
+    &.bounceInDown {
+        animation-delay: 0.2s;
+        animation-duration: 1s;
+    }
+
+    &.fix {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        box-shadow: 0 5px 5px -2px rgba(0,0,0,0.2);
+        border-radius: 0;
+        & .navbar-toggle, & .navbar-toggle:hover, & .navbar-toggle:focus {
+            height: 50px;
+        }
+
+        ul li, & ul li a {
+            height: 50px;
+            line-height: 20px;
+        }
+
+        a.navbar-brand {
+            height: 50px;
+            line-height: 20px;
+
+            div {
+                bottom: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &.slideOutUp, #mynav.slideInDown {
+        animation-duration: 0.5s;
+    }
 }
-
-#mynav.slideOutUp, #mynav.slideInDown {
-  animation-duration: 0.5s;
-}
-
-#mynav.fix {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-
-    box-shadow: 0 5px 5px -2px rgba(0,0,0,0.2);
-    border-radius: 0;
-}
-
 
 @keyframes fade {
     0% {

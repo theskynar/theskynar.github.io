@@ -330,19 +330,31 @@ div.header-footer {
   height: 70px;
   margin: 0; }
 
-#mynav.bounceInDown {
-  animation-delay: 0.2s;
-  animation-duration: 1s; }
-
-#mynav.slideOutUp, #mynav.slideInDown {
-  animation-duration: 0.5s; }
-
-#mynav.fix {
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 0; }
+#mynav {
+  transition: all 0.3s ease-out;
+  height: 50px; }
+  #mynav.bounceInDown {
+    animation-delay: 0.2s;
+    animation-duration: 1s; }
+  #mynav.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 0; }
+    #mynav.fix .navbar-toggle, #mynav.fix .navbar-toggle:hover, #mynav.fix .navbar-toggle:focus {
+      height: 50px; }
+    #mynav.fix ul li, #mynav.fix ul li a {
+      height: 50px;
+      line-height: 20px; }
+    #mynav.fix a.navbar-brand {
+      height: 50px;
+      line-height: 20px; }
+      #mynav.fix a.navbar-brand div {
+        bottom: 25px;
+        margin-bottom: 25px; }
+  #mynav.slideOutUp, #mynav #mynav.slideInDown {
+    animation-duration: 0.5s; }
 
 @keyframes fade {
   0% {
@@ -373,7 +385,7 @@ div.header-footer {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); } }
 
 section.portfolio {
-  padding: 110px 0 40px 0;
+  padding: 90px 0 40px 0;
   min-height: 100%;
   display: flex;
   display: -webkit-flex;
@@ -504,7 +516,7 @@ section.team {
     background-size: cover;
     background-position: bottom center;*/
   background: #009BFE;
-  padding: 110px 0 40px 0;
+  padding: 90px 0 40px 0;
   min-height: 100%;
   display: flex;
   display: -webkit-flex;
@@ -594,7 +606,7 @@ section.team {
     padding: 0 40px; } }
 
 section.contato {
-  padding: 110px 0 40px 0;
+  padding: 90px 0 40px 0;
   min-height: 100%;
   display: flex;
   display: -webkit-flex;
