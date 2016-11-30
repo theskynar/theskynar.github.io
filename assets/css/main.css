@@ -330,6 +330,10 @@ div.header-footer {
   height: 70px;
   margin: 0; }
 
+#mynav.bounceInDown {
+  animation-delay: 0.2s;
+  animation-duration: 1s; }
+
 #mynav.slideOutUp, #mynav.slideInDown {
   animation-duration: 0.5s; }
 

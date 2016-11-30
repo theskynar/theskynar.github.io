@@ -92,7 +92,7 @@ function buttonsCtrl(){
 function navCtrl(){
   var nav = $('#mynav');
   if($(window).scrollTop() >= $(window).height())
-    nav.removeClass('fadeInDown').addClass('fix slideInDown');
+    nav.removeClass('bounceInDown').addClass('fix slideInDown');
   else if(nav.hasClass('slideInDown')){
     nav.removeClass('slideInDown').addClass('slideOutUp');
     setTimeout(function(){
