@@ -6,7 +6,7 @@ angular
         event.preventDefault();
         $('.spinner').show();
 
-        $http.post('https://skynar.herokuapp.com/email', mail)
+        $http.post('https://skynarapp.herokuapp.com/email', mail)
           .success(function(){
             sendAlert('Email enviado com sucesso, agradecemos seu contato!','info','bottom');
           })
